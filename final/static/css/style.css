@@ -1,0 +1,100 @@
+  .bg-img {
+    background-image: url("https://wallpapercave.com/wp/cqhO8rQ.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  img[alt="bubble"] {
+    width: 20px;
+    opacity: 0;
+    animation: bubble 7s linear infinite;
+  }
+  
+  img[alt="bubble"]:nth-child(1) {
+    animation-delay: 2s;
+  }
+  img[alt="bubble"]:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img[alt="bubble"]:nth-child(3) {
+    animation-delay: 5s;
+  }
+  img[alt="bubble"]:nth-child(7) {
+    animation-delay: 4s;
+  }
+  img[alt="bubble"]:nth-child(2) {
+    animation-delay: 3s;
+  }
+  img[alt="bubble"]:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  img[alt="bubble"]:nth-child(6) {
+    animation-delay: 7s;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-85vh);
+    }
+  }
+  
+  .bubble_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  
+  audio::-webkit-media-controls-play-button,
+  audio::-webkit-media-controls-panel {
+    background-color: #FF9502;
+    color: #FF9502;
+  }
+  
+  
+  body {
+    word-wrap: break-word;
+  }
+  
+  
+  .card {
+    font-family: "Oswald", sans-serif;
+    border-color: white;
+    color: black;
+    box-shadow: 5px 5px 15px white;
+    display:inline-block;
+  }
+
+.search_box {
+  width: fit-content;
+}
+.input_search{
+  width: fit-content;
+}
+
+form {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
